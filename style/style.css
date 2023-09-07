@@ -67,18 +67,18 @@ header {
 }
 
 .logo{
-    padding: 30px 50px;
+    padding: 30px 000px;
 }
 
 .Navigation {
     display:flex;
-    gap:68px;
+    gap:79px;
 }
 
 nav ul li{
     list-style: none;
     padding-right: 25px;
-    padding-left:25px;
+    padding-left:25px
 }
 
 .Menu1 {
@@ -87,16 +87,46 @@ nav ul li{
     padding-top:14px;
 }
 
-.Menu1:active{
-
-}
-
 .Menu2:hover {
     color: var(--main-color);
     border-top: 2px var(--main-color) solid;
     padding-top:14px;
 }
+/****** Titres et formulaire de recherche ***********/
 
+.trouver{
+    header {
+        display:flex;
+        flex-direction: column;
+        align-items:flex-start;
+        gap:35px;
+        align-self:stretch;
+    }
+}
+h1 {
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;   
+    align-self: stretch; 
+}
+
+p{
+    align-self: stretch;
+}
+.searchbar{
+    border-radius: 10px;
+    border:1px var(--main-bg-color) solid;
+}
+.nav {
+    color: black;
+    background-color: var(--main-bg-color);
+    width: 50px;
+    height: 49px;
+    justify-content: center;
+    align-items: center;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
