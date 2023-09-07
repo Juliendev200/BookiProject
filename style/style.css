@@ -70,7 +70,7 @@ header {
     padding: 30px 50px;
 }
 
-nav ul {
+.Navigation {
     display:flex;
     gap:68px;
 }
@@ -83,6 +83,18 @@ nav ul li{
 
 .Menu1 {
     color: var(--main-color);
+    border-top: 2px var(--main-color) solid;
+    padding-top:14px;
+}
+
+.Menu1:active{
+
+}
+
+.Menu2:hover {
+    color: var(--main-color);
+    border-top: 2px var(--main-color) solid;
+    padding-top:14px;
 }
 
 /****** Hebergements And Populaires ***********/
