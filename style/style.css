@@ -55,7 +55,34 @@ a {
 }
 
 .neutral-star {
-    color: var(--main-bg-color)
+    color: var(--main-bg-color);
+}
+/****** Headers ***********/
+
+header {
+    display:flex;
+    align-items:start;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo{
+    padding: 30px 50px;
+}
+
+nav ul {
+    display:flex;
+    gap:68px;
+}
+
+nav ul li{
+    list-style: none;
+    padding-right: 25px;
+    padding-left:25px;
+}
+
+.Menu1 {
+    color: var(--main-color);
 }
 
 /****** Hebergements And Populaires ***********/
