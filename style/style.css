@@ -67,24 +67,111 @@ header {
 }
 
 .logo{
-    padding: 30px 50px;
+    padding: 30px 000px;
 }
 
-nav ul {
+.Navigation {
     display:flex;
-    gap:68px;
+    gap:79px;
 }
 
 nav ul li{
     list-style: none;
     padding-right: 25px;
-    padding-left:25px;
+    padding-left:25px
 }
 
 .Menu1 {
     color: var(--main-color);
+    border-top: 2px var(--main-color) solid;
+    padding-top:14px;
 }
 
+.Menu2:hover {
+    color: var(--main-color);
+    border-top: 2px var(--main-color) solid;
+    padding-top:14px;
+}
+/****** Titres et formulaire de recherche ***********/
+
+.trouver{
+    header {
+        display:flex;
+        flex-direction: column;
+        align-items:flex-start;
+        gap:35px;
+        align-self:stretch;
+    }
+}
+h1 {
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;   
+    align-self: stretch; 
+}
+
+p{
+    align-self: stretch;
+}
+.searchbar{
+    display:flex;
+    flex-direction:row;
+    border-radius: 15px;
+    border:1px var(--main-bg-color) solid;
+    justify-content: flex-start;
+    gap:24px;
+    width: 377px;
+    height: 49px;
+}
+.nav {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg-color);
+    border-radius: 15px 0px 0px 15px;
+    width: 50px;
+    height: 49px;
+}
+
+.fa-location-dot{
+    color: black;
+}
+
+.Recherchertexte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Recherchertexte p{
+    color: var(--Black, #000);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 18px;
+    margin:auto;
+}
+
+.Rechercher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px solid var(--Blue, #0065FC);
+    background: var(--Blue, #0065FC);
+    color: var(--White, #FFF);
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+.Rechercherbutton {
+    padding: 16px 15px;
+    color: #ffffff;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -190,5 +277,8 @@ nav ul li{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    /* Bouton de recherche pour téléphone*/
+    <div class="Rechercher">
+        <i class="fa-solid fa-magnifying-glass Rechercherbutton"></i>
+    </div>
 }
