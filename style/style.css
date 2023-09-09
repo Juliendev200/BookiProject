@@ -63,7 +63,7 @@ header {
     display:flex;
     align-items:start;
     justify-content: space-between;
-    padding: 1rem;
+
 }
 
 .logo{
@@ -102,14 +102,6 @@ nav ul li{
         gap:35px;
     }
 
-    header {
-        display:flex;
-        flex-direction: column;
-        align-items:flex-start;
-        gap:35px;
-        align-self:stretch;
-    }
-
 h1 {
     font-family: Raleway;
     font-size: 22px;
@@ -119,9 +111,12 @@ h1 {
     align-self: stretch; 
 }
 
-p{
+.trouver p{
     align-self: stretch;
+    font-size: 16px;
 }
+
+
 .searchbar{
     display:flex;
     flex-direction:row;
@@ -179,6 +174,54 @@ p{
     padding: 16px 15px;
     color: #ffffff;
 }
+
+.filtres {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 18px;
+}
+.filtre-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 16px;
+    font-weight: 700;
+    gap:15px;
+}
+
+.filtre-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border:2px var(--main-bg-color) solid;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 4px 19px;
+}
+
+.filtre-button:active {
+    background: var(--filter-bg-color);
+}
+
+.filtre-button:hover {
+    background: var(--filter-bg-color);
+}
+
+.fa-money-bill-wave .fa-person .fa-heart .fa-fire .fa-circle-info{
+    color:var(--main-color);
+}
+
+
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
