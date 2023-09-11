@@ -14,15 +14,21 @@
 }
 
 body {
+    margin: 0 auto;
     display: flex;
     justify-content: center;
 }
 
 .main-container {
-    width: 100%;
+    width:100%;
     max-width: 1440px;
-    padding: 0 50px;
+    display:flex;
+    flex-direction: column;
     box-sizing: border-box;
+}
+
+.Main{
+    padding: 0 50px;
 }
 
 a {
@@ -60,31 +66,37 @@ a {
 /****** Headers ***********/
 
 header {
+    width:100%;
+    max-width: 1440px;
     display:flex;
-    align-items:start;
+    flex-direction: row;
+    height: 79px;
     justify-content: space-between;
-
 }
 
 .logo{
-    padding: 30px 000px;
+    margin: 30px 50px;
 }
 
 .Navigation {
+    width:244px;
+    height:35px;
     display:flex;
-    gap:79px;
+    gap: 68px;
+    justify-content: space-between;
+    margin:auto;
+    padding:0 50px;
 }
 
-nav ul li{
-    list-style: none;
-    padding-right: 25px;
-    padding-left:25px
-}
-
+102
 .Menu1 {
     color: var(--main-color);
     border-top: 2px var(--main-color) solid;
     padding-top:14px;
+}
+
+.Menu2{
+    padding-top:16px;
 }
 
 .Menu2:hover {
@@ -92,6 +104,7 @@ nav ul li{
     border-top: 2px var(--main-color) solid;
     padding-top:14px;
 }
+
 /****** Titres et formulaire de recherche ***********/
 
 .trouver{
@@ -103,7 +116,7 @@ nav ul li{
     }
 
 h1 {
-    font-family: Raleway;
+    font-family: 'Raleway';
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -243,6 +256,12 @@ h2{
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+}
+
+.hebergements-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .populaires-title {

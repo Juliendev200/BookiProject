@@ -13,86 +13,108 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/style.css">
 </head>
-
 <body>
     <div class="main-container">
         <header>
-            <div class="logo">
-                <img src="images/logo/Booki61x19.png" alt="logoBooki">
-            </div>
-            <nav>
-                <ul class="Navigation">
-                    <li> <a href="#" class="Menu1"> Hébergements </a> </li>
-                    <li> <a href="#" class="Menu2"> Activités </a> </li>
-                </ul>
-            </nav>
+                <a href="#" class="logo"> 
+                    <img src="images/logo/Booki61x19.png" alt="logoBooki">
+                </a>
+                <nav>
+                    <div class="Navigation">
+                        <a href="#" class="Menu1"> Hébergements </a>
+                        <a href="#" class="Menu2"> Activités </a>
+                    </div>
+                </nav>
         </header>
-                <main>
-                    <section class="trouver">
-                        <div>
+        <main>
+            <div class="Main">
+                <section class="trouver">
+                    <div>
                         <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
                             <p>En plein centre-ville ou en pleine nature</p>
-                        </div>
-                        <div class="searchbar">
-                            <div class="nav">
+                    </div>
+                    <div class="searchbar">
+                        <div class="nav">
                                 <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div class="Recherchertexte">
+                        </div>
+                        <div class="Recherchertexte">
                                 <p>Marseille, France</p>
-                            </div>
-                            <div class="Rechercher">
+                        </div>
+                        <div class="Rechercher">
                                 <a class="Rechercherbutton" href="#">Rechercher</a>
-                            </div> 
-                        </div>
-                        <div class="filtres">
-                            <h2> Filtres</h2>
-                            <div class="filtre-container">
-                                <div class="filtre-button">
-                                    <div>
-                                        <i class="fa-solid fa-money-bill-wave"> </i>
-                                    </div>
-                                    <div>
-                                        <p> Economique</p>
-                                    </div>
+                        </div> 
+                    </div>
+                    <div class="filtres">
+                        <h2> Filtres</h2>
+                        <div class="filtre-container">
+                            <div class="filtre-button">
+                                <div>
+                                    <i class="fa-solid fa-money-bill-wave"> </i>
                                 </div>
-                                <div class="filtre-button">
-                                    <div>
-                                        <i class="fa-solid fa-person"></i> </i>
-                                    </div>
-                                    <div>
-                                        <p> Familial</p>
-                                    </div>
+                                <div>
+                                    <p> Economique</p>
                                 </div>
-                                <div class="filtre-button">
-                                    <div>
-                                        <i class="fa-solid fa-heart"> </i>
-                                    </div>
-                                    <div>
-                                        <p> Romantique</p>
-                                    </div>
+                            </div>
+                            <div class="filtre-button">
+                                <div>
+                                    <i class="fa-solid fa-person"></i> </i>
                                 </div>
-                                <div class="filtre-button">
-                                    <div>
-                                        <i class="fa-solid fa-fire"> </i>
-                                    </div>
-                                    <div>
-                                        <p> Nos pépites</p>
-                                    </div>
+                                <div>
+                                    <p> Familial</p>
+                                </div>
+                            </div>
+                            <div class="filtre-button">
+                                <div>
+                                    <i class="fa-solid fa-heart"> </i>
+                                </div>
+                                <div>
+                                    <p> Romantique</p>
+                                </div>
+                            </div>
+                            <div class="filtre-button">
+                                <div>
+                                    <i class="fa-solid fa-fire"> </i>
+                                </div>
+                                <div>
+                                   <p> Nos pépites</p>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <p>
-                                <i class="fa-solid fa-circle-info"></i>
-                                Plus de 500 logements sont disponibles dans cette ville
-                            </p>
-                        </div>
+                    </div>
+                    <div>
+                        <p>
+                            <i class="fa-solid fa-circle-info"></i>
+                            Plus de 500 logements sont disponibles dans cette ville
+                        </p>
+                    </div>
                         <br>
                         <br>
 
-                    </section>
+                </section>
                     <div class="hebergements-and-populaires">
                         <section class="hebergements">
+                            <div class="populaires-title">
+                                <h2 class="section-title">Hébergements à Marseille</h2>
+                            </div>
+                            <a href="#">
+                                <article class="card">
+                                    <img src="./images/hebergements/" alt="Image de la chambre d'hôtel montrant un lit">
+                                    <div class="card-content">
+                                        <div class="card-txt">
+                                            <h3 class="card-title">Hôtel Le soleil du matin</h3>
+                                            <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
+                                        </div>
+                                        <div class="card-rating">
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                            <span class="sr-only">Note de 4 sur 5</span>
+                                        </div>
+                                    </div>
+                                </article>
+                                </a>
                         </section>
                         <section class="populaires">
                             <div class="populaires-title">
@@ -160,7 +182,8 @@
                             </div>
                         </section>
                     </div>
-                </main>        
+                </div>  
+        </main>      
         <footer></footer>
     </div>
 </body>
