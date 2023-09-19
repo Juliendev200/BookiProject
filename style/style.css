@@ -376,17 +376,18 @@ header {
     gap:30px;
     max-height: 439px;
     width:100%;
-    box-sizing:border-box;
 }
 
 .activites-cards .card{
     max-width:297.5px;
     width: 100%;
     padding:0px 0px 15px 0px;
+    max-height: 439px;
+    box-sizing:border-box;
 }
+
 .activites-cards img{
     width: 100%;
-    max-width:297.5px;
     height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
