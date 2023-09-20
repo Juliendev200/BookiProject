@@ -57,6 +57,9 @@ a {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     padding:5px;
 }
+.card:hover{
+    filter: drop-shadow(0px 3px 15px var(--main-color));
+}
 
 .card img {
     object-fit: cover;
@@ -84,8 +87,10 @@ header {
     justify-content: space-between;
 }
 
-.logo{
+.logo img{
     margin: 30px 50px;
+    width:61.1px;
+    height: 19px;
 }
 
 .Navigation {
@@ -132,14 +137,14 @@ header {
 
 .searchbar{
     display:flex;
-    flex-direction:row;
-    border-radius: 15px;
     border:1px var(--main-bg-color) solid;
-    justify-content: flex-start;
     gap:24px;
     width: 377px;
     height: 49px;
+    box-sizing: border-box;
+    border-radius: 15px 15px 15px 15px;
 }
+
 .nav {
     display:flex;
     justify-content: center;
@@ -158,16 +163,19 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 147px;
+    box-sizing: border-box;
 }
 
-.Recherchertexte p{
+input{
     color: var(--Black, #000);
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     font-size: 18px;
-    margin:auto;
+    width: 100%;
+    border:none;
 }
 
 .Rechercher {
@@ -180,13 +188,27 @@ header {
     color: var(--White, #FFF);
     font-size: 18px;
     font-weight: 700;
-
+    width:auto;
 }
 
 .Rechercherbutton {
     padding: 16px 15px;
     color: #ffffff;
+    width:auto;
+    background:none;
+    display:block;
 }
+
+.glassbutton{
+    width:49px;
+    border-radius:15px;
+    padding: 16px 15px;
+    height: 49px;
+    Background:none;
+    color: #ffffff;
+    display:none;
+}
+
 
 .filtres {
     display: flex;
@@ -205,9 +227,10 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    font-size: 16px;
     font-weight: 700;
     gap:15px;
+    align-items: center;
+    height: 50px;
 }
 
 .filtre-button{
@@ -220,6 +243,14 @@ header {
     justify-content: flex-start;
     gap: 10px;
     padding: 4px 19px;
+    height: 100%;
+}
+
+.abutton{
+    display: flex;
+    height:100%;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .filtre-button:active {
@@ -313,7 +344,9 @@ header {
     align-items: center;
 }
 
-
+.hoverblue:hover{
+    color: var(--main-color);
+}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -424,7 +457,7 @@ footer {
     flex-direction: column;
     gap:15px;
     padding: 20px;
-
+    width:100%;
 }
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
