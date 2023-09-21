@@ -83,8 +83,11 @@ header {
     max-width: 1440px;
     display:flex;
     flex-direction: row;
-    height: 79px;
     justify-content: space-between;
+}
+
+.logo {
+    height: 79px;
 }
 
 .logo img{
@@ -143,6 +146,7 @@ header {
     width: 377px;
     height: 49px;
     box-sizing: border-box;
+    justify-content: space-between;
     border-radius: 15px 15px 15px 15px;
 }
 
@@ -168,7 +172,7 @@ header {
     box-sizing: border-box;
 }
 
-input{
+input {
     color: var(--Black, #000);
     font-family: 'Raleway';
     font-style: normal;
@@ -178,6 +182,8 @@ input{
     width: 100%;
     border:none;
 }
+
+
 
 .Rechercher {
     display: flex;
@@ -190,6 +196,7 @@ input{
     font-size: 18px;
     font-weight: 700;
     width:auto;
+
 }
 
 .Rechercherbutton {
@@ -202,14 +209,11 @@ input{
 
 .glassbutton{
     width:49px;
-    border-radius:15px;
-    padding: 16px 15px;
-    height: 49px;
+    border: none;
     Background:none;
     color: #ffffff;
     display:none;
 }
-
 
 .filtres {
     display: flex;
@@ -520,7 +524,79 @@ footer {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* Bouton de recherche pour téléphone*/
-    <div class="Rechercher">
-        <i class="fa-solid fa-magnifying-glass Rechercherbutton"></i>
-    </div>
+
+/****** Headers et Général***********/
+
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .logo img{
+        display: flex;
+        justify-content: center;
+        margin:auto;
+    }
+
+    nav{
+        width:100%;
+        margin:0px;
+    }
+    .Navigation{
+        width: 100%;
+        height:100%;
+        gap:0px;
+        padding:0px;
+    }
+
+    .Menu1{
+        display: flex;
+        flex:1 0 0;
+        border-top: none;
+        padding-top: 0px;
+        border-bottom: 2px var(--main-color) solid;
+        padding-bottom:14px;
+        justify-content: center;
+    }
+
+    .Menu2{
+        display: flex;
+        width:100%;
+        flex:1 0 0;
+        justify-content: center;
+        padding-top: 0px;
+        padding-bottom:14px;
+    }
+
+    .Menu2:hover {
+        border-top: none;
+        border-bottom: 2px var(--main-color) solid;
+        padding-top: 0px;
+    }
+
+    .main{
+        padding: 0 20px;
+    }
+
+/****** Titres et formulaire de recherche ***********/
+
+.Rechercherbutton {
+    display: none;
+}
+
+.glassbutton{
+    display:block;
+
+}
+
+.searchbar{
+    width:100%;
+}
 }
