@@ -587,7 +587,11 @@ footer {
     }
 
     .main{
-        padding: 0 20px;
+        padding: 0px;
+    }
+
+    .trouver{
+        padding: 20px;
     }
 
 /****** Titres et formulaire de recherche ***********/
@@ -623,6 +627,27 @@ footer {
     font-size:14px;
     width: calc(100%/2);
     padding:0px 19px;
+}
+
+/*********** Hébergements et Populaires***********/
+
+
+.populaires{
+    order:1;
+}
+
+.hebergements{
+    order:2;
+}
+
+.hebergements-and-populaires section{
+    border-radius: 0px;
+}
+
+/*********** Populaires ***********/
+
+.populaires-cards{
+    flex-direction: column;
 }
 
 }
