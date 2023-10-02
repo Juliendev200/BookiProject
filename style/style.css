@@ -16,12 +16,11 @@
     color: var(--main-color);
 }
 
+/****** Modif post soutenance ***********/
 body {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
+    max-width: 1440px;
+    margin: auto;
     gap:35px;
-    width: 100vw;
 }
 
 .main-container {
@@ -81,32 +80,24 @@ header {
     width:100%;
     max-width: 1440px;
     display:flex;
-    flex-direction: row;
     justify-content: space-between;
 }
-
-.logo {
-    height: 79px;
-}
-
-.logo img{
-    margin: 30px 50px;
-    width:61.1px;
+/****** Modif post soutenance ***********/
+#logo {
+    width: 61.1px;
     height: 19px;
-}
+    margin: 30px 50px;
+  }
 
 .Navigation {
-    width:244px;
-    height:35px;
     display:flex;
     gap: 68px;
-    justify-content: space-between;
-    margin:auto;
-    padding:0 50px;
+    margin:0 50px;
 }
 
 .Menu1 {
     padding-top:16px;
+    display: inline-block;
 }
 
 .Menu1:hover{
@@ -117,6 +108,7 @@ header {
 
 .Menu2{
     padding-top:16px;
+    display: inline-block;
 }
 
 .Menu2:hover {
@@ -306,7 +298,7 @@ input {
     justify-content: center;
 }
 
-.hebergements-cards .card {
+.hebergements-cards .card  {
     display: flex;
     flex-direction: column;
     gap:4px;
@@ -526,20 +518,11 @@ footer {
 
     header{
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
-
-    .logo{
-        display: flex;
-        justify-content: center;
-
-    }
-
-    .logo img{
-        display: flex;
-        justify-content: center;
-        margin:auto;
+/****** Modif post soutenance ***********/
+    #logo{
+        margin:30px;
     }
 
     nav{
@@ -547,49 +530,50 @@ footer {
         width:100%;
     }
 
-    .Navigation{
-        width: 100%;
-        height:100%;
-        gap:0px;
-        padding:0px;
+/****** Modif post soutenance ***********/
+    .Navigation a{
+        width:50%;
     }
 
+    /****** Modif post soutenance ***********/
     .Menu1{
         display: flex;
         flex:1 0 0;
         padding-top: 0px;
-        padding-bottom:14px;
+        padding-bottom:17px;
         justify-content: center;
     }
-
+/****** Modif post soutenance ***********/
     .Menu1:hover{
             border-top: none;
             border-bottom: 2px var(--main-color) solid;
             padding-top: 0px;
-        
+            padding-bottom: 15px;
     }
-
+/****** Modif post soutenance ***********/
     .Menu2{
         display: flex;
         width:100%;
         flex:1 0 0;
         justify-content: center;
         padding-top: 0px;
-        padding-bottom:14px;
+        padding-bottom: 17px;
     }
-
+/****** Modif post soutenance ***********/
     .Menu2:hover {
         border-top: none;
         border-bottom: 2px var(--main-color) solid;
         padding-top: 0px;
+        padding-bottom: 15px;
     }
 
     .main{
         padding: 0px;
     }
 
+/****** Modif post soutenance ***********/
     .trouver{
-        padding: 20px;
+        padding: 0px 20px;
     }
 
 /****** Titres et formulaire de recherche ***********/
@@ -655,8 +639,8 @@ footer {
     padding:30px 20px;
 }
 
+/****** Modif post soutenance ***********/
 .populaires-cards .card{
-    height:146px;
     width:100%;
     padding:0px;
     margin-top:15px;
