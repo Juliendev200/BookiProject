@@ -604,6 +604,12 @@ footer {
     gap:10px;
     width: 100%;
 }
+
+/****** Modif post soutenance 2!***********/
+.Navigation{
+    gap:0px;
+    margin:0px;
+}
 .abutton{
     font-size:14px;
     width: calc(100%/2);
